@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta viewport="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>THP - Image Search Abstraction Layer</title>
+  </head>
+  <body>
+      <h1>Image Search Abstraction Layer</h1>
+      <hr>
+      <main>
+          <p>Search the web for images or see recent searches</p><br>
+          <div id="input-area">
+            <label for="search-type">Type of Search: </label>
+            <select id="search-type">
+              <option value="search">Search for Images</option>
+              <option value="recent">Recent Searches</option>
+            </select><br><br>
+              <label for="query">Query: </label><input id="query" /><br><br>
+              <label for="page">Page: </label><input id="page" value="1" placeholder="1"/><br><br>
+            <label for="image-size">Image Size: </label>
+            <select id="image-size">
+              <option value="all">All</option>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+              <option value="xlarge">XL</option>
+              <option value="xxlarge">XXL</option>
+            </select>
+          </div><br><br>
+        <label for="output-url">Here's your URL:</label><span id="output-url"></span>
+      </main>
+   <script src="rootFunc.js"></script>
+  </body>
+</html>
+
+
+
